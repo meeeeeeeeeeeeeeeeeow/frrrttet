@@ -1,0 +1,17 @@
+class Human():
+    def __init__(self,na,age,gend):
+        self.na = na
+        self.age = age
+        self.gend = gend
+    def shit(self,year):
+        i = int(year) - int(2023)
+        l = int(i)+int(self.age)
+        print(self.na,self.age,'лет. В',year,'году ему/ей будет',l)
+    
+        
+a = input('Имя ')
+b = input('Возраст ')
+c = input('Пол ')
+year = input('Год')
+j = Human(a,b,c)
+j.shit(year)
